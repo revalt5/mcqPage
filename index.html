@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern MCQ Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </label>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Modern MCQ Test</h1>
+            <p class="subtitle">Test your knowledge with our weekly quizzes</p>
+        </header>
+
+        <div class="week-selector">
+            <button id="prevWeekBtn" class="week-nav-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="dropdown">
+                <button class="dropdown-btn" id="weekDropdownBtn">Select Week <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content" id="weekDropdown">
+                    <!-- Week buttons will be generated here -->
+                </div>
+            </div>
+            <button id="nextWeekBtn" class="week-nav-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="week-navigation" id="weekNavigation">
+            <!-- Active week buttons will be generated here -->
+        </div>
+
+        <div class="stats-container">
+            <div class="score-display">
+                <span>Score:</span>
+                <div class="score" id="scoreDisplay">0 / 0</div>
+            </div>
+            <div class="week-info" id="weekInfo">Week 1 of 30</div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div id="quizContainer">
+            <!-- All questions for the week will be dynamically inserted here -->
+        </div>
+
+        <div id="resultsContainer" style="display: none;">
+            <div class="quiz-card results-card">
+                <div class="results-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="results-title">Quiz Completed!</div>
+                <div class="results-score" id="finalScore">0/10</div>
+                <div class="results-message" id="resultsMessage">You've completed this week's quiz.</div>
+                <div class="results-buttons">
+                    <button class="btn" id="restartBtn">
+                        <i class="fas fa-redo"></i> Restart Quiz
+                    </button>
+                    <button class="btn btn-outline" id="nextWeekAfterResultsBtn">
+                        Next Week <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
