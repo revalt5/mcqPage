@@ -67,6 +67,7 @@ h1 {
 
 /* Theme Switch */
 .theme-switch-wrapper {
+    margin-top:5px;
     position: absolute;
     top: 20px;
     right: 20px;
