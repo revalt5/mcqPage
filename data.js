@@ -1807,8 +1807,7 @@ const jsonData = [
         "Jawaharlal Nehru",
         "Ambedkar",
         "Raja Rammohan Roy",
-        "Ishwar Chandra Vidyasagar",
-        "Mahatma Gandhi"
+        "Ishwar Chandra Vidyasagar"
       ],
       "answer": "Raja Rammohan Roy"
     },
