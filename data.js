@@ -1855,7 +1855,7 @@ const jsonData = [
       "question": "Which one among the following sentences is not correct about Raja Rammohan Roy?",
       "options": [
         "He supported the new system of education started by the Britishers.",
-        "He was not an ardent supporter of modern liberal education in colonial India,",
+        "He was not an ardent supporter of modern liberal education in colonial India.",
         "He wanted Britishers to employ English gentlemen to instruct the natives of India in mathematics, philosophy, chemistry, anatomy.",
         "He wanted to promote modern scientific liberal education because of their practical values and necessity"
       ],
